@@ -1,14 +1,15 @@
-import React,{Component} from "react";
+import fake from "faker";
+import React, { Component } from "react";
 import Commenddetails from "./commenddetails";
 
-export default class App extends Component{
-    render(){
-        return (
-        <div className="ui container comments">
-        <Commenddetails author="Kadir" timeago="Today at 5:00PM"/>
-        <Commenddetails author="Murugan" timeago="Today at 4:30PM"/>  
-        <Commenddetails author="kandha" timeago="yesterday at 5:00PM"/>         
-        </div>
-        );
-    }
+export default class App extends Component {
+  render() {
+    return (
+      <div className="ui container comments">
+        <Commenddetails author="Kadir" timeago="Today at 5:00PM" content="Lovable content" image={fake.image.avatar()}/>
+        <Commenddetails author="Murugan" timeago="Today at 4:30PM" content="I like this writing" image={fake.image.avatar()}/>
+        <Commenddetails author="kandha" timeago="yesterday at 5:00PM" content="I like this subject" image={fake.image.avatar()}/>
+      </div>
+    );
+  }
 }
