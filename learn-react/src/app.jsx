@@ -5,11 +5,9 @@ export default class App extends Component{
     render(){
         return (
         <div className="ui container comments">
-        <Commenddetails/>
-        <Commenddetails/>  
-        <Commenddetails/>  
-        <Commenddetails/>  
-        <Commenddetails/>      
+        <Commenddetails author="Kadir" timeago="Today at 5:00PM"/>
+        <Commenddetails author="Murugan" timeago="Today at 4:30PM"/>  
+        <Commenddetails author="kandha" timeago="yesterday at 5:00PM"/>         
         </div>
         );
     }
