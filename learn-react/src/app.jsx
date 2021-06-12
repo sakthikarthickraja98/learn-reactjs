@@ -5,7 +5,11 @@ export default class App extends Component{
     render(){
         return (
         <div className="ui container comments">
-        <Commenddetails/>    
+        <Commenddetails/>
+        <Commenddetails/>  
+        <Commenddetails/>  
+        <Commenddetails/>  
+        <Commenddetails/>      
         </div>
         );
     }
